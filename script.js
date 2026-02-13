@@ -1,9 +1,9 @@
 const gifStages = [
     "https://media.tenor.com/EBV7OT7ACfwAAAAj/u-u-qua-qua-u-quaa.gif",    // 0 normal
     "https://media.tenor.com/lC1z6uaP_wYAAAAj/craziness-grey-cat.gif",  // 1 confused
-    "https://media.tenor.com/lC1z6uaP_wYAAAAj/craziness-grey-cat.gif",             // 2 pleading
+    "https://media.tenor.com/Ly87GVX9qOIAAAAi/thanhhuyen.gif",             // 2 pleading
     "https://media.tenor.com/hC-yDXkM-UcAAAAi/cat-woman-peach-%26-goma.gif",             // 3 sad
-    "https://media.tenor.com/lC1z6uaP_wYAAAAj/craziness-grey-cat.gif",       // 4 sadder
+    "https://media.tenor.com/1QTB9AnN7RQAAAAi/peach-goma.gif",       // 4 sadder
     "https://media.tenor.com/7vdAIAUcnkUAAAAi/bugcat-capoo-ice-cream.gif",             // 5 devastated
     "https://media.tenor.com/Ly87GVX9qOIAAAAi/thanhhuyen.gif",               // 6 very devastated
     "https://media.tenor.com/aUNFPNeEECcAAAAi/capoo-bug.gif"  // 7 crying runaway
@@ -103,7 +103,7 @@ function handleNoClick() {
     swapGif(gifStages[gifIndex])
 
     // Runaway starts at click 5
-    if (noClickCount >= 5 && !runawayEnabled) {
+    if (noClickCount >= 9 && !runawayEnabled) {
         enableRunaway()
         runawayEnabled = true
     }
