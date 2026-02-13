@@ -1,24 +1,24 @@
 const gifStages = [
     "https://media.tenor.com/EBV7OT7ACfwAAAAj/u-u-qua-qua-u-quaa.gif",    // 0 normal
-    "https://media1.tenor.com/m/uDugCXK4vI4AAAAd/chiikawa-hachiware.gif",  // 1 confused
-    "https://media.tenor.com/f_rkpJbH1s8AAAAj/somsom1012.gif",             // 2 pleading
-    "https://media.tenor.com/OGY9zdREsVAAAAAj/somsom1012.gif",             // 3 sad
-    "https://media1.tenor.com/m/WGfra-Y_Ke0AAAAd/chiikawa-sad.gif",       // 4 sadder
-    "https://media.tenor.com/CivArbX7NzQAAAAj/somsom1012.gif",             // 5 devastated
-    "https://media.tenor.com/5_tv1HquZlcAAAAj/chiikawa.gif",               // 6 very devastated
-    "https://media1.tenor.com/m/uDugCXK4vI4AAAAC/chiikawa-hachiware.gif"  // 7 crying runaway
+    "https://media.tenor.com/lC1z6uaP_wYAAAAj/craziness-grey-cat.gif",  // 1 confused
+    "https://media.tenor.com/lC1z6uaP_wYAAAAj/craziness-grey-cat.gif",             // 2 pleading
+    "https://media.tenor.com/hC-yDXkM-UcAAAAi/cat-woman-peach-%26-goma.gif",             // 3 sad
+    "https://media.tenor.com/lC1z6uaP_wYAAAAj/craziness-grey-cat.gif",       // 4 sadder
+    "https://media.tenor.com/7vdAIAUcnkUAAAAi/bugcat-capoo-ice-cream.gif",             // 5 devastated
+    "https://media.tenor.com/Ly87GVX9qOIAAAAi/thanhhuyen.gif",               // 6 very devastated
+    "https://media.tenor.com/aUNFPNeEECcAAAAi/capoo-bug.gif"  // 7 crying runaway
 ]
 
 const noMessages = [
     "No",
-    "Are you positive? 🤔",
-    "Pookie please... 🥺",
-    "If you say no, I will be really sad...",
-    "I will be very sad... 😢",
-    "Please??? 💔",
-    "Don't do this to me...",
-    "Last chance! 😭",
-    "You can't catch me anyway 😜"
+    "Estas segurita? 🤔",
+    "Supeeeer segura??🥺",
+    "puque bb",
+    "cof el verde😔",
+    "porfiiiis😘",
+    "te doy bechitos",
+    "super triste",
+    "este es el definitivo tocame"
 ]
 
 const yesTeasePokes = [
@@ -66,13 +66,7 @@ function toggleMusic() {
 }
 
 function handleYesClick() {
-    if (!runawayEnabled) {
-        // Tease her to try No first
-        const msg = yesTeasePokes[Math.min(yesTeasedCount, yesTeasePokes.length - 1)]
-        yesTeasedCount++
-        showTeaseMessage(msg)
-        return
-    }
+ 
     window.location.href = 'yes.html'
 }
 
